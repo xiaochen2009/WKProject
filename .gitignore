@@ -1,0 +1,6 @@
+*.xcodeproj/project.xcworkspace
+*.xcodeproj/xcuserdata
+.*
+!.gitignore
+build/
+.idea/ workspace.xml
