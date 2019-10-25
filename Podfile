@@ -6,4 +6,5 @@ target 'WKProject' do
 pod 'AFNetworking', '~> 3.0'
 pod 'SDWebImage', '~> 5.0'
 pod 'SVProgressHUD', '~> 2.2.5'
+pod 'MBProgressHUD'
 end

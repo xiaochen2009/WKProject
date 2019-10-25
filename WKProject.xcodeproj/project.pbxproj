@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		5652469C235EE28100AFD749 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5652469B235EE28100AFD749 /* Assets.xcassets */; };
 		5652469F235EE28100AFD749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5652469D235EE28100AFD749 /* LaunchScreen.storyboard */; };
 		565246A2235EE28100AFD749 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 565246A1235EE28100AFD749 /* main.m */; };
+		56DBA9CD235FEFF700DBB820 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56DBA9CC235FEFF700DBB820 /* AVFoundation.framework */; };
+		56DBA9D2235FF12700DBB820 /* MISVideoPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56DBA9D0235FF12700DBB820 /* MISVideoPlayer.bundle */; };
+		56DBA9D3235FF12700DBB820 /* MISVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DBA9D1235FF12700DBB820 /* MISVideoPlayerViewController.m */; };
+		56DBA9DA235FF16C00DBB820 /* MISVideoDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DBA9D4235FF16C00DBB820 /* MISVideoDownloader.m */; };
+		56DBA9DB235FF16C00DBB820 /* MISVideoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DBA9D7235FF16C00DBB820 /* MISVideoCache.m */; };
+		56DBA9DC235FF16C00DBB820 /* MISVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DBA9D9235FF16C00DBB820 /* MISVideoManager.m */; };
 		844E4883C911683B753151A6 /* libPods-WKProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A2AD19C912224BCD6BC6AD /* libPods-WKProject.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +38,16 @@
 		5652469E235EE28100AFD749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		565246A0235EE28100AFD749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		565246A1235EE28100AFD749 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56DBA9CC235FEFF700DBB820 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		56DBA9CF235FF12700DBB820 /* MISVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISVideoPlayerViewController.h; sourceTree = "<group>"; };
+		56DBA9D0235FF12700DBB820 /* MISVideoPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MISVideoPlayer.bundle; sourceTree = "<group>"; };
+		56DBA9D1235FF12700DBB820 /* MISVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISVideoPlayerViewController.m; sourceTree = "<group>"; };
+		56DBA9D4235FF16C00DBB820 /* MISVideoDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISVideoDownloader.m; sourceTree = "<group>"; };
+		56DBA9D5235FF16C00DBB820 /* MISVideoDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISVideoDownloader.h; sourceTree = "<group>"; };
+		56DBA9D6235FF16C00DBB820 /* MISVideoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISVideoCache.h; sourceTree = "<group>"; };
+		56DBA9D7235FF16C00DBB820 /* MISVideoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISVideoCache.m; sourceTree = "<group>"; };
+		56DBA9D8235FF16C00DBB820 /* MISVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MISVideoManager.h; sourceTree = "<group>"; };
+		56DBA9D9235FF16C00DBB820 /* MISVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MISVideoManager.m; sourceTree = "<group>"; };
 		59A2AD19C912224BCD6BC6AD /* libPods-WKProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WKProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -40,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56DBA9CD235FEFF700DBB820 /* AVFoundation.framework in Frameworks */,
 				844E4883C911683B753151A6 /* libPods-WKProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +67,7 @@
 		55A9588EAB6DE75E47DD9DE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56DBA9CC235FEFF700DBB820 /* AVFoundation.framework */,
 				59A2AD19C912224BCD6BC6AD /* libPods-WKProject.a */,
 			);
 			name = Frameworks;
@@ -76,6 +94,7 @@
 		5652468E235EE27F00AFD749 /* WKProject */ = {
 			isa = PBXGroup;
 			children = (
+				56DBA9CE235FF12700DBB820 /* MISAVPlayer */,
 				5652468F235EE27F00AFD749 /* AppDelegate.h */,
 				56524690235EE27F00AFD749 /* AppDelegate.m */,
 				56524692235EE27F00AFD749 /* SceneDelegate.h */,
@@ -91,13 +110,28 @@
 			path = WKProject;
 			sourceTree = "<group>";
 		};
+		56DBA9CE235FF12700DBB820 /* MISAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				56DBA9D6235FF16C00DBB820 /* MISVideoCache.h */,
+				56DBA9D7235FF16C00DBB820 /* MISVideoCache.m */,
+				56DBA9D5235FF16C00DBB820 /* MISVideoDownloader.h */,
+				56DBA9D4235FF16C00DBB820 /* MISVideoDownloader.m */,
+				56DBA9D8235FF16C00DBB820 /* MISVideoManager.h */,
+				56DBA9D9235FF16C00DBB820 /* MISVideoManager.m */,
+				56DBA9CF235FF12700DBB820 /* MISVideoPlayerViewController.h */,
+				56DBA9D0235FF12700DBB820 /* MISVideoPlayer.bundle */,
+				56DBA9D1235FF12700DBB820 /* MISVideoPlayerViewController.m */,
+			);
+			path = MISAVPlayer;
+			sourceTree = "<group>";
+		};
 		F536933C6CB90B72565115D1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				188198845593AD79BEA1D787 /* Pods-WKProject.debug.xcconfig */,
 				2833AA588EC995A81E07E22B /* Pods-WKProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -163,6 +197,7 @@
 				5652469F235EE28100AFD749 /* LaunchScreen.storyboard in Resources */,
 				5652469C235EE28100AFD749 /* Assets.xcassets in Resources */,
 				5652469A235EE27F00AFD749 /* Main.storyboard in Resources */,
+				56DBA9D2235FF12700DBB820 /* MISVideoPlayer.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +251,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				56524697235EE27F00AFD749 /* ViewController.m in Sources */,
+				56DBA9DC235FF16C00DBB820 /* MISVideoManager.m in Sources */,
+				56DBA9DB235FF16C00DBB820 /* MISVideoCache.m in Sources */,
 				56524691235EE27F00AFD749 /* AppDelegate.m in Sources */,
 				565246A2235EE28100AFD749 /* main.m in Sources */,
+				56DBA9D3235FF12700DBB820 /* MISVideoPlayerViewController.m in Sources */,
+				56DBA9DA235FF16C00DBB820 /* MISVideoDownloader.m in Sources */,
 				56524694235EE27F00AFD749 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
